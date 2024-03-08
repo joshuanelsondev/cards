@@ -1,0 +1,42 @@
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    place-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: auto;
+    padding: 20px;
+    font-family: Merriweather, Georgia, serif;
+
+    &__topic {
+        font-size: 10px;
+        color: orange;
+        font-family: sans-serif;
+    }
+
+    &__header {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__author-div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 60%
+    }
+
+    &__by {
+        font-size: 12px;
+    }
+    
+    &__author {
+        color: gray;
+    }
+}
