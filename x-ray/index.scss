@@ -1,42 +1,82 @@
+$text-color: #D1D1D1;
+
 body {
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
     padding: 0;
     margin: 0;
-    display: flex;
-    place-content: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .card {
     display: flex;
     flex-direction: column;
-    height: 400px;
-    width: auto;
+    height: 450px;
+    width: 350px;
     padding: 20px;
     font-family: Merriweather, Georgia, serif;
+    box-shadow: 0 0 2px gray;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    &__image {
+        margin-bottom: 20px;
+    }
 
     &__topic {
-        font-size: 10px;
+        font-size: 9px;
         color: orange;
-        font-family: sans-serif;
+        font-family: Helvetica, sans-serif;
+        font-weight: 600;
+        letter-spacing: 3px;
     }
 
     &__header {
-        font-size: 24px;
+        font-size: 20px;
+        word-wrap: normal;
         font-weight: 600;
+        margin: 0;
     }
 
     &__author-div {
         display: flex;
         align-items: center;
         gap: 10px;
-        width: 60%
+        width: 70%;
+        height: auto;
     }
 
     &__by {
-        font-size: 12px;
+        font-size: 10px;
+        font-style: italic;
+        color: gray;
     }
     
     &__author {
+        color: $text-color;
+        font-size: 10px 
+    }
+
+    &__text {
         color: gray;
+        line-height: 25px;
+        font-size: 12px; 
+        font-family: Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    &__dash {
+        color: $text-color;
+        font-size: 12px
+    }
+
+    &__comment, &__bookmark {
+        color: $text-color;
+        fill: $text-color;
+        scale: .5;
+        
     }
 }

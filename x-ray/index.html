@@ -5,16 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warmup</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> 
 </head>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 100,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 16
+    }
+</style>
 <body>
     <div class="card">
         <img src="x-ray.webp" alt="universe cosmo" class="card__image">
         <p class="card__topic">COSMOLOGY</p>
         <p class="card__header">Fresh X-Rays Reveal a Universe as Clumpy as Cosmology Predicts</p>
         <div class="card__author-div">
-            <p class="card__by">By <span class="card__author">LIZ KRUESI</span></p>
-            <div class="card__comments">comments</div>
-            <div class="card__save">save</div>
+            <p class="card__by">By</p>
+            <p class="card__author">LIZ KRUESI</p>
+            <p class="card__dash">|</p>
+            <span class="material-symbols-outlined card__comment">
+                mode_comment
+            </span>
+            <p class="card__dash">|</p>
+            <span class="material-symbols-outlined card__bookmark">
+                bookmark
+            </span>
         </div>
         <p class="card__text">By mapping the largest structures in the universe in X-rays, cosmologists have found striking agreement with their
         standard theoretical model of how the universe evolves.</p>
@@ -22,3 +42,4 @@
     </div>
 </body>
 </html>
+

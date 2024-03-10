@@ -1,39 +1,71 @@
 body {
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   padding: 0;
   margin: 0;
-  display: flex;
-  place-content: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  height: 400px;
-  width: auto;
+  height: 450px;
+  width: 350px;
   padding: 20px;
   font-family: Merriweather, Georgia, serif;
+  box-shadow: 0 0 2px gray;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.card__image {
+  margin-bottom: 20px;
 }
 .card__topic {
-  font-size: 10px;
+  font-size: 9px;
   color: orange;
-  font-family: sans-serif;
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
 .card__header {
-  font-size: 24px;
+  font-size: 20px;
+  word-wrap: normal;
   font-weight: 600;
+  margin: 0;
 }
 .card__author-div {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 60%;
+  width: 70%;
+  height: auto;
 }
 .card__by {
-  font-size: 12px;
+  font-size: 10px;
+  font-style: italic;
+  color: gray;
 }
 .card__author {
+  color: #D1D1D1;
+  font-size: 10px;
+}
+.card__text {
   color: gray;
+  line-height: 25px;
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+.card__dash {
+  color: #D1D1D1;
+  font-size: 12px;
+}
+.card__comment, .card__bookmark {
+  color: #D1D1D1;
+  fill: #D1D1D1;
+  scale: 0.5;
 }
 
 /*# sourceMappingURL=index.css.map */
